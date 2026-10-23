@@ -168,7 +168,7 @@ public class MainActivity extends Activity {
         executor.execute(() -> {
             HttpURLConnection conn = null;
             try {
-                URL url = new URL("http://" + ip + "/sony/ircc");
+                URL url = new URL("http://" + ip + "/sony/IRCC");
                 conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("POST"); conn.setConnectTimeout(2500); conn.setReadTimeout(2500);
                 conn.setDoOutput(true);
